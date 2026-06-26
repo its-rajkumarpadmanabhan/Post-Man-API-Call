@@ -45,6 +45,7 @@ if __name__ == '__main__':
     def clear_history():
         """Empties the API history log."""
         global api_history
+        
         api_history = [] # Reset the list to empty
-        return jsonify({"message": "History cleared successfully"}), 200
+        return jsonify({"message": "History Cleared successfully"}), 200
     app.run(debug=True, port=5000)
